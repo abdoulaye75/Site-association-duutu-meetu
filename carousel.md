@@ -34,3 +34,16 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="row">
+            <div class="col-lg-12">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-success" id="first"> <input type="radio" name="options"/> <span class="glyphicon glyphicon-fast-backward"></span> </label>
+                    <label class="btn btn-success" id="pause"> <input type="radio" name="options"/> <span class="glyphicon glyphicon-pause"></span> </label>
+                    <label class="btn btn-success active" id="play"> <input type="radio" name="options"/> <span class="glyphicon glyphicon-play"></span> </label>
+                    <label class="btn btn-success" id="last"> <input type="radio" name="options"/> <span class="glyphicon glyphicon-fast-forward"></span> </label>
+                </div>
+                <p> <span class="label label-primary"> </span> </p>
+            </div>
+        </div>
+        </div>
