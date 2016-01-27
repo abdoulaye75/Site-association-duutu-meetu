@@ -47,3 +47,25 @@
             </div>
         </div>
         </div>
+        
+        <!-- ================================================ CODE JQUERY DU CARROUSEL ================================================= -->
+        
+        function afficheImage() {
+                var nbTotalImages = $(".item").length;
+                var imageActuelle = $(".item.active").index() + 1;
+                $(".label").text(imageActuelle + " / " + nbTotalImages);
+            }
+            
+            $(function(){
+              afficheImage();
+                $(".carousel").carousel({interval: 4000});
+                $("#first").click(function() {$(".carousel").carousel(0);});
+                $("#previous").click(function() {$(".carousel").carousel("prev");});
+                $("#pause").click(function() {$(".carousel").carousel("pause");});
+                $("#play").click(function() {$(".carousel").carousel("cycle");});
+                $("#next").click(function() {$(".carousel").carousel("next");});
+                $("#last").click(function() {$(".carousel").carousel(10);});
+                $(".carousel").on("slid.bs.carousel", function(){
+                   afficheImage(); 
+                });
+            });
