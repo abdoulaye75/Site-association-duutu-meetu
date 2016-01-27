@@ -1,2 +1,2 @@
 # Site-association-duutu-meetu
-Code du site de l'association Koussané Kafo Duutu Meetu
+Code des pages du site de l'association Koussané Kafo Duutu Meetu
