@@ -1,0 +1,3 @@
+- Dans l'idéal, mettre le carrousel sur toute la largeur de la page
+- Supprimer la pagination (page précédente) en bas de la page
+- Pour la 2e image, supprimer la retouche
