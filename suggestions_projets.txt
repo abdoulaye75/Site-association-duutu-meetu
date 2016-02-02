@@ -1,0 +1,6 @@
+- Avoir un fond de couleur plus clair
+- Le plugin accordéon s'étendra sur 12 colonnes (col-lg-12) au lieu de 8 (col-lg-8)
+- Le titre bien centré
+- A l'intérieur du projet sur le coton, colorer le lien sur la CMDT (à l'état normal et au survol)
+- Dans une balise small, préciser qu'il faut cliquer sur le titre pour ouvrir ou refermer le plugin accordéon
+- Sommaire sur le côté gauche
