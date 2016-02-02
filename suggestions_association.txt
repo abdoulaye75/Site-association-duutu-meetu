@@ -1,0 +1,4 @@
+- Appliquer des marges internes au bloc de texte
+- Colorer les 2 liens de fichiers PDF aussi bien à l'état normal qu'au survol
+- Sur le côté gauche, créer une section qui regroupe les liens contenus dans l'onglet "L'association"
+- Mettre l'image sur toute la largeur de la page (largeur de 100% et hauteur de 500 pixels)
