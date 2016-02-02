@@ -1,0 +1,3 @@
+- Au survol des onglets de la barre de navigation, mettre les mots en blanc et le fond en noir
+- Colorer les liens de l'aide à la navigation (à l'état normal et au survol)
+- Colorer l'aide à la navigation (couleur #cde)
