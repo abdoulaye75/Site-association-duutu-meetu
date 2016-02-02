@@ -1,0 +1,3 @@
+- Mettre l'image sur toute la largeur de la page (pour cela, l'insérer dans une balise div en tant qu'image de fond, hauteur de 600 pixels)
+- Si possible, avoir une image vierge (rien écrit dessus) et écrire moi-même le mot "Koussané"
+- Juste en dessous de l'image, le slogan écrit en gros et bien centré
