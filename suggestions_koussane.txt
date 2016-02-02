@@ -1,0 +1,4 @@
+- Enlever la couleur de fond au texte
+- Dans une div de classe container-fluid, mettre le texte bien centré
+- Fixer une hauteur de 650 pixels à l'image
+- Colorer le lien du fichier PDF (à l'état normal et au survol)
