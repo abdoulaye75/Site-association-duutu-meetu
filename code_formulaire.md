@@ -2,21 +2,21 @@
 
 <form class="col-lg-6" action="traitement.php" method="post">
 <legend> <h3> Pour nous contacter ou nous soutenir </h3> </legend>
-<span> NB : les champs marqués par un * sont obligatoires </span>
+<span> NB : tous les champs sont obligatoires </span>
 
 <div class="form-group">
-<label for="nom"> Nom * : </label>
+<label for="nom"> Nom : </label>
 <input id="nom" type="text" name="nom" class="form-control" required="required"/>
 </div>
 
 <div class="form-group">
-<label for="prenom"> Prénom * : </label>
+<label for="prenom"> Prénom : </label>
 <input id="prenom" type="text" name="prenom" class="form-control" required="required"/>
 </div>
 
 <div class="form-group">
-<label for="email"> Email * : </label>
-<input id="email" type="email" name="email" class="form-control" required="required"/> <span class="help-block pull-right"> Votre email doit contenir un "@" </span>
+<label for="email"> Email : </label>
+<input id="email" type="email" name="email" class="form-control" required="required"/>
 </div>
 
 <div class="form-group">
@@ -25,7 +25,7 @@
 </div>
 
 <div class="form-group">
-<label for="select"> Objet du message * : </label>
+<label for="select"> Objet du message : </label>
 <select id="objet" name="objet" class="form-control" required="required">
 <option> Demande d'adhésion </option>
 <option> Soutien ou don </option>
@@ -33,7 +33,7 @@
 </select>
 </div>
 
-<label for="textarea"> Votre message * : </label>
+<label for="textarea"> Votre message : </label>
 <textarea id="message" name="message" class="form-control" rows="8" placeholder="Tapez votre message ici" required="required"> </textarea>
 <br/>
 
