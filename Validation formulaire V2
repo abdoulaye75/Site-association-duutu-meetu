@@ -1,0 +1,45 @@
+<div class="container">
+
+<form id="formulaire_contact" class="col-lg-6" action="" method="post">
+<legend> <h3> Pour nous contacter ou nous soutenir </h3> </legend>
+<span> NB : tous les champs sont obligatoires </span>
+
+<div class="form-group">
+<label for="nom"> Nom : </label>
+<input id="nom" type="text" name="nom" class="form-control" data-validation="required" data-validation-length="min2" data-validation-regexp="^([a-z]+)$" data-validation-help="Le nom doit contenir au moins 2 lettres !"/>
+</div>
+
+<div class="form-group">
+<label for="prenom"> Prénom : </label>
+<input id="prenom" type="text" name="prenom" class="form-control" data-validation="required" data-validation-length="min2" data-validation-regexp="^([a-z]+)$" data-validation-help="Le prénom doit contenir au moins 2 lettres !" />
+</div>
+
+<div class="form-group">
+<label for="email"> Email : </label>
+<input id="email" type="text" data-validation="email" name="email" class="form-control" data-validation="required" data-validation-help="L'email doit contenir un 'a' et un '.'" />
+</div>
+
+<div class="form-group">
+<label for="telephone"> Téléphone portable : </label>
+<input id="telephone" type="tel" name="telephone" class="form-control" data-validation="required" data-validation-help="Le numéro doit contenir 10 chiffres" />
+</div>
+
+<div class="form-group">
+<label for="select"> Objet du message : </label>
+<select id="objet" name="objet" class="form-control" data-validation="required" data-validation="length" data-validation-length="1" data-validation-help="Un objet doit être sélectionné">
+<option> Demande d'adhésion </option>
+<option> Soutien ou don </option>
+<option> Autre </option>
+</select>
+</div>
+
+<label for="textarea"> Votre message : </label>
+    <textarea id="message" name="message" class="form-control" rows="8" placeholder="Tapez votre message ici" data-validation="required" data-validation-help="Le message ne doit pas rester vide" > </textarea>
+<br/>
+
+<button class="btn btn-primary" type="submit"> Envoyer </button>
+<button class="btn btn-danger" type="reset"> Tout effacer </button>
+
+</form>
+
+</div>
