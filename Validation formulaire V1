@@ -1,0 +1,100 @@
+$(document).ready(function() {
+   $("#formulaire_contact").formValidation({
+      framework: "bootstrap",
+       icon : {
+           valid: "glyphicon glyphicon-ok",
+           invalid: "glyphicon glyphicon-remove",
+           validating: "glyphicon glyphicon-refresh"
+       },
+       
+       // Les différents champs du formulaire
+       
+       // le champ nom
+       fields: {
+           nom: {
+             validators: {
+                 notEmpty: {
+                     message: "Vous devez renseigner votre nom de famille"
+                 },
+                 stringLength: {
+                     min: 2,
+                     message: "Le nom doit comporter au moins 2 lettres"
+                 },
+                 regexp: {
+                     regexp: /^[a-zA-Z]+$/,
+                     message: "Le nom ne peut contenir que des lettres !"
+                 }
+             }  
+           },
+           
+           
+           // le champ prenom
+           prenom: {
+             validators: {
+                 notEmpty: {
+                     message: "Vous devez renseigner votre prénom"
+                 },
+                 stringLength: {
+                     min: 2,
+                     message: "Le prénom doit comporter au moins 2 lettres"
+                 },
+                 regexp: {
+                     regexp: /^[a-zA-Z]+$/,
+                     message: "Le prénom ne peut contenir que des lettres !"
+                 }
+             }  
+           },
+           
+           
+           // le champ email
+           email: {
+               validators: {
+                   notEmpty: {
+                       message: "Vous devez renseigner votre adresse e-mail"
+                   },
+                   regexp: {
+                       regexp: /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/,
+                       message: "L'adresse e-mail doit comporter un '@' ET un '.'"
+                   }
+               }
+           },
+           
+           
+           // le champ téléphone
+           telephone: {
+               validators: {
+                   notEmpty: {
+                       message: "Vous devez renseigner votre numéro de téléphone portable"
+                   },
+                   regexp: {
+                       regexp: /^[0-9]+$/,
+                       message: "Le numéro doit contenir 10 chiffres"
+                   }
+               }
+           },
+           
+           
+           // le champ objet
+           objet: {
+               validators: {
+                   notEmpty: {
+                       message: "Un objet doit être sélectionné"
+                   }
+               }
+           },
+           
+           
+           // le champ message
+           message: {
+               validators: {
+                   notEmpty: {
+                       message: "Le message ne doit pas être vide"
+                   }
+               }
+           }
+           
+           
+           
+       }
+   });
+});
