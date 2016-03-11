@@ -1,0 +1,117 @@
+$(document).ready(function() {
+   $("#send").click(function() {
+      valid = true;
+       
+       /*************************************************************** pour le champ nom *****************************************************************************************/
+       
+       if ($("#nom").val() === "") {
+           $("#nom").next(".error-message").fadeIn().text("Veuillez renseigner votre nom");
+           valid = false;
+       }
+       
+       /******************* si le nom contient autre chose que des lettres *************************/
+       else if (!($("#nom").val().match("/^[a-z]+$/i"))) {
+           $("#nom").next(".error-message").fadeIn().text("Un nom ne peut contenir que des lettres !");
+           valid = false;
+       }
+       
+       /*********************** la longueur minimale du nom ****************************/
+       else if ($("#nom").val().length < 2) {
+           $("#nom").next(".error-message").fadeIn().text("Le nom doit comporter au moins 2 lettres");
+           valid = false;
+       }
+       
+       else {
+           $("#nom").next(".error-message").hide();
+       }
+       
+       
+       
+       /********************************************************************** pour le champ prénom ************************************************************************************/
+       
+       if ($("#prenom").val() === "") {
+           $("#prenom").next(".error-message").fadeIn().text("Veuillez renseigner votre prénom");
+           valid = false;
+       }
+       
+       /******************* si le prénom contient autre chose que des lettres *************************/
+       else if (!($("#prenom").val().match("/^[a-z]+$/i"))) {
+           $("#prenom").next(".error-message").fadeIn().text("Un prénom ne peut contenir que des lettres !");
+           valid = false;
+       }
+       
+       /*********************** la longueur minimale du prénom ****************************/
+       else if ($("#prenom").val().length < 2) {
+           $("#prenom").next(".error-message").fadeIn().text("Le prénom doit comporter au moins 2 lettres");
+           valid = false;
+       }
+       
+       else {
+           $("#prenom").next(".error-message").hide();
+       }
+       
+       
+       
+       /********************************************************************* pour le champ email *******************************************************************************************/
+       
+       if($("#email").val() == "") {
+           $("#email").next(".error-message").fadeIn().text("Veuillez renseigner votre adresse mail");
+           valid = false;
+       }
+       
+       else if (!($("#email").val().match("/^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/"))) {
+           $("#email").next(".error-message").fadeIn().text("L'adresse mail doit contenir un '@' et un '.'");
+           valid = false;
+       }
+       
+       else {
+           $("#email").next(".error-message").hide();
+       }
+       
+       
+       
+      /********************************************************************* pour le champ téléphone *******************************************************************************************/
+       
+       if ($("#telephone").val() === "") {
+           $("#telephone").next(".error-message").fadeIn().text("Veuillez renseigner votre numéro de téléphone portable");
+           valid = false;
+       }
+       
+       else if (!($("#telephone").val().match("/^0[6-7]([-.]?[0-9])+$/"))) {
+           $("#telephone").next(".error-message").fadeIn().text("Le numéro de votre portable doit contenir 10 chiffres en tout et commencer par '06' ou '07'");
+           valid = false;
+        }
+       
+       else {
+           $("#telephone").next(".error-message").hide();
+       }
+                    
+                    
+                    
+       /********************************************************************* pour le champ objet *******************************************************************************************/
+        
+        if ($("#objet option:selected").val() === "vide") {
+            $("#objet").next(".error-message").fadeIn().text("Un objet doit être sélectionné");
+            valid = false;
+        }
+       
+       else {
+           $("#objet").next(".error-message").hide();
+       }
+        
+                    
+                    
+                    
+        /********************************************************************* pour le champ message *******************************************************************************************/
+                    
+        if ($("#message").val() === "") {
+            $("#message").next(".error-message").fadeIn().text("Le message ne doit pas rester vide");
+            valid = false;
+        }
+       
+       else {
+           $("#message").next(".error-message").hide();
+       }
+    
+   });
+});
